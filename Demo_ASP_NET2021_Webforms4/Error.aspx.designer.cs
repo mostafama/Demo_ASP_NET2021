@@ -11,30 +11,16 @@ namespace Demo_ASP_NET2021_Webforms4
 {
 
 
-    public partial class About
+    public partial class Error
     {
 
         /// <summary>
-        /// likeLnk control.
+        /// errorMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton likeLnk;
-
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new Demo_ASP_NET2021_Webforms4.SiteMaster Master
-        {
-            get
-            {
-                return ((Demo_ASP_NET2021_Webforms4.SiteMaster)(base.Master));
-            }
-        }
+        protected global::System.Web.UI.WebControls.Label errorMsg;
     }
 }

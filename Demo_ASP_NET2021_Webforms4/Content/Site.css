@@ -1,6 +1,6 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -18,7 +18,12 @@ textarea {
     max-width: 280px;
 }
 
-
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
