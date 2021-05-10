@@ -1,0 +1,32 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.ProductID</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Slug }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Slug }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Slug })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
